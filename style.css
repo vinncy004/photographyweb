@@ -1,0 +1,463 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 252);
+    font-size: 17px;
+    background:linear-gradient(to right,rgb(255, 255, 255)0%,rgba(95, 70, 70, 0)70%),url(img/bgimage.jpg);
+    background-size:50%;
+    background-attachment:fixed ;
+    background-position:right;
+    background-repeat:no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(14, 13, 13);
+    
+}
+.top-navigation{
+    background-color: rgb(34, 33, 33);
+     width: 100vw;
+    height: 50px;
+}
+.icon{
+    margin-top: 1px;
+    width: 40px;
+    margin-top:1px ;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+.icon-name{
+    margin-top:17px ;
+    font-size: 25px;
+    color: rgb(231, 104, 13);
+    margin-right: 35vw;
+
+}
+.top-navigation ul{
+    color: rgb(238, 238, 241);
+   
+}
+.top-navigation ul li{
+    text-align: center;
+    margin-top: 0;
+    display: inline-block;
+    list-style: none;
+    margin-left: 25px;
+
+ }
+
+ .top-navigation ul li a{
+    margin-top: 17px;
+   text-decoration: none;
+   text-transform: capitalize;
+   color:rgb(235, 235, 248) ;
+   &:hover{
+    color:rgb(7,247,7);
+   }
+}
+a:active{
+    color: rgb(226, 9, 9);
+}
+
+.booking-btn{
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgb(240, 112, 21);
+    color: white;
+    font-size: 15px;
+    margin: 1 0 10 10;
+    &:hover{
+        background-color: rgb( 7,247,7);
+        transition: .2s ease;
+     }
+   }
+   .top-navigation ul li .booking-btn a{
+   
+    &:hover{
+        color: black;
+    }
+   }
+  #menu{
+    display: none;
+  }
+  #hide{
+    display: none;
+  }
+
+   #btn1{
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    color: rgb(3, 1, 1);
+    font-size: 15px;
+    margin-left: 20vw;
+    background-color:transparent;
+   border: 1px solid black;
+    &:hover{
+        background-color:  rgb(91, 136, 91);
+        transition: .3s ease;
+    }
+   }
+   #btn1 a{
+    text-decoration: none;
+    color: black;
+   }
+   #btn{
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    color: rgb(2, 1, 1);
+    font-size: 15px;
+    background-color:transparent;
+    border: 1px solid black;
+    margin-left: 30px;
+
+    &:hover{
+        background-color:  rgb(91, 134, 91);
+        transition: .3s ease;
+    }
+   } 
+   #btn a{
+    text-decoration: none;
+    color: black;
+   } 
+   #phoneimage{
+    display: none;
+   }
+  
+  button{
+    width: 20vw;
+    height: 40px;
+  }
+  h3{
+    color: rgb(247, 83, 7);
+  }
+  #about-text{
+    margin-top: 1px;
+  }
+ 
+ 
+  <!.services..>
+ #images-top{
+    width: 100vw;
+    height: 40vh;
+  background-color: blue;
+    
+}
+
+#bottom-nav{
+  background-color: rgb(49, 49, 54);
+  
+}
+
+#bottom-nav .contacts ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 50px;
+ } 
+
+
+ .contacts{
+  margin-left: 1vw;
+ }
+ #bottom-nav  #quicklinks{
+
+ }
+
+
+
+
+  @media  screen and (max-width:480px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box; 
+       }
+       body{
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        height: fit-content;
+        overflow: scroll;
+        overflow-x:hidden;
+        background-image: url();
+        background-color: white;
+        color: black;
+       }
+       .container{
+        width: 99vw;
+        height: 100%;
+        margin-left: 2px;
+       }
+       #hide{
+        display: inline;
+        color: rgb(255, 94, 0);
+       }
+       
+       #menu{
+        display:inline;
+        border: none;
+        background: none;
+        background-color: transparent;
+        margin-left: 10%;
+       }
+       #menu-icon{
+        background: none;
+        background-color: transparent;
+        width: 40px;
+        height: 30px;
+        margin-left: 0;
+       }
+       #icontop{
+        display: none;
+       }
+     .top-navigation{
+      height: 100vh;
+      width: 50vw;
+      background-color: rgb(43, 37, 37);
+      display: none;
+      z-index: 1000;
+      position: absolute;
+     }
+     .top-navigation ul li{
+      list-style-type: none;
+      display: block;
+      margin-top: 30px;
+      margin-left:1px;
+      text-transform: capitalize;
+      color: white;
+      text-align: left;
+     }
+     .booking-btn{
+      background-color: rgb(216, 94, 57);
+      color: black;
+      height: 40px;
+     }
+     .booking-btn a{
+      color: black;
+      font-size: 20px;
+     }
+     #header2{
+      display: none;
+     }
+
+     .top-navigation ul li a{
+      margin-left: 2px;
+      font-size: 25px;
+     }
+       
+     #phoneimage{
+      display:inline-block;
+    
+     }
+   #ingallery{
+    width: 94vw;
+    margin-left: 10px;
+    height: 40vh;
+    border: none;
+    border-radius: 5px;
+   }
+  
+   #bottom-nav{
+    width: 99vw;
+    color: rgb(7, 7, 7);
+    background-color: rgb(236, 236, 236);
+   }
+   #bottom-nav ul{
+    display: inline-block;
+   }
+   #bottom-nav ul li{
+    display: block;
+   }
+
+   #bottom-nav .contacts{
+    width:;
+   }
+   #bottom-nav #quicklinks{
+    width: 30vw;
+    margin-left: 10px;
+   }
+   #testimonoials{
+    display: inline-block;
+   }
+   #testmonials ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 99vw;
+    height: 20vh;
+    border: 1px solid rgb(14, 14, 27);
+    background-color: #3693fd;
+   }
+   #testmonials ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+   }
+   .bts{
+    width: 40px;
+    height: 30px;
+    background-color: #466588;
+    margin-left: 3px;
+    border-radius: 2px;
+    margin-top: 2px;
+   }
+   #one{
+    margin-left: 25%;
+   }
+   .sub{
+    margin-left: 27%;
+    width: 40vw;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #466588;
+    font-size: 16px;
+
+   }
+   #add{
+    margin-left: 20%;
+    width: 50vw;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #68254e;
+    font-size: 20px;
+    margin-top: 10px;
+   }
+   #feature{
+    width: 99vw;
+    height: fit-content;
+    background-color: #fffbfb;
+    display:none;
+   }
+   #feature.active{
+    display: block;
+   }
+   #feature input{
+    width: 80vw;
+    height: 30px;
+    margin-left: 4px;
+    border: 1px solid black;
+   }
+   #ok{
+    margin-left: 20%;
+    width: 30vw;
+    background-color: transparent;
+   border-radius: 15px;
+   }
+
+   .contacts li{
+    display: block;
+    margin-top: 10px;
+   }
+   #quicklinks ul li{
+     display: block;
+     margin-top: 10px;
+   }
+   #copyright{
+    text-align: center;
+   }
+   #copyright p{
+    color: rgb(31, 29, 49);
+   }
+   #copyright a:visited{
+    color:rgb(28, 22, 34);
+   }
+   
+   #bottom-nav{
+    display: inline-block;
+   }
+   #email{
+    width: 90vw;
+    height: 30px;
+    margin-left: 3px;
+   }
+   #feedback{
+    width: 90vw;
+    height: 10vh;
+    margin-left: 3px;
+   }
+   fieldset{
+   border: 1px solid black;
+   width: 99vw;
+   }
+   #btn2{
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    color: rgb(3, 1, 1);
+    font-size: 15px;
+    background-color: rgb(192, 181, 178);
+    box-shadow: 3px 1px rgb(255, 253, 253);
+    margin-left: 33vw;
+   }
+/* Menu Bar Styling */
+#menu-bar {
+    background: #000000;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#menu {
+    background:transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20%;
+}
+#title{
+  color: orangered;
+  font-size: 25px;
+}
+
+/* Top Navigation Styling */
+.top-navigation {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #222;
+    display: none;
+    transition: width 0.3s ease;
+    z-index: 999;
+}
+
+
+.top-navigation.active {
+    display: block;
+    width: 50vw;
+}
+
+.top-navigation ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.top-navigation li {
+    margin: 20px 0;
+}
+
+.top-navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.top-navigation a:hover {
+    color: #ddd;
+}
+
+
+
+  }
