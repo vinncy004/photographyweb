@@ -7,13 +7,14 @@
  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
 <div id="menu-bar">
-    <span id="title" >fidel_photography</span><button id="menu"><img src="img/menubar.png" alt="" id="menu-icon" onclick="toggleNav()"></button>
+    <span id="title" >fidel_photography</span><button id="menu"><img src="img/menubar.png" alt="" id="menu-icon" onclick="toggleNav()" ></button>
 </div>
     <div class="container">
         <div class="top-navigation" id="sideNav">
             
-            <ul><li id="icontop"><img src="img/icon.jpg" alt="loading..." class="icon"><span class="icon-name">fidel_shots</span></li>
+            <ul><li id="icontop"><img src="img/icon.jpg" alt="loading..." class="icon" loading="lazy"><span class="icon-name">fidel_shots</span></li>
                 <li><a href="index.html" onclick="closeNav()">home</a></li>
                 <li><a href="galleries.html" onclick="closeNav()">Galleries</a></li>
                 <li><a href="services.html" id="services" onclick="closeNav()">services</a></li>
@@ -24,62 +25,77 @@
             
         </div>
         <br>
+        <div id="alert">
+
+        </div>
        <a name="top"></a>
         <br><br>
-        <h1>get the best and ultimate photography</h1>
+        <h1 id="header1"> get the best and ultimate photography</h1>
         <br>
         <h2 id="header2">capture memories with fidel_shots photoraphy</h2>
-
-        <br>
-        <h3>best partner in making all your memories lively</h3>
+        <h3 id="header3">best partner in making memories lively</h3>
         <br>
         <div id="phoneimage">
-            <img src="img/bgimage.jpg" alt="" srcset="" id="ingallery">
+            <img src="img/bgimage.jpg" alt="" srcset="" id="ingallery" loading="lazy">
          </div>
          <br><br><br>
-        <button id="btn"><a href="services.html">services</a></button><button id="btn1"><a href="about.html">about-us</a></button>
+        <button id="btn"><a href="galleries.html">galleries</a></button><button id="btn1"><a href="about.html">about-us</a></button>
+         <br>
+
+         <h2 id="services-header">services</h2>
+         <ul id="serv">
+            <li>>wedding coverage</li>
+            <li>>wedding coverage</li>
+            <li>>wedding coverage</li>
+            <li>>wedding coverage</li>
+            <li>>wedding coverage</li>
+            <li>>wedding coverage</li>
+         </ul>
          <br>
          <br>
+         <button class="order" id="order" onclick="makeOrder()">book now</button>
+         <br>
+         <br>
+         <div id="make-order">
+          
+         </div>
          <h2>why choose fidel_photography?</h2>
          <br>
-        <h3>customer satisfaction</h3>
+        <h3 id="header3">customer satisfaction</h3>
         <p>we value our customers,we try to  achieve the expectations of our customers </p>
-        <h3>flexibility</h3>
+        <h3 id="header3">flexibility</h3>
         <p>we are open when needed and ensuring we provide our services in a timely manner</p>
-        <h3>cost-effectiveness</h3>
+        <h3 id="header3">cost-effectiveness</h3>
         <p>our goal being customer satisfaction we offer good services to our trusted customers at  cost-friendly </p>
-        <h3>support </h3>
+        <h3 id="header3">support </h3>
         <p>fidel_photography offers 24/7 support to our  valued customers <br>we are open </p>
      <br><br>
      <ul>
-        FAQs
+        <h3>FAQs-we have got answers</h3>
         <li>
-            <details>
-                <summary>where are you located <span>+</span></summary>
-                <p>reach us in our premise located on kisii -daraja mbili</p>
-            </details>
+            <p>where are your offices located ? <span><button id="ones" class="faqq">+</button></span></p>
+            <div id="onesanswer">
+                
+            </div>
         </li>
         <li>
-            <details>
-                <summary>are your services mobile <span>+</span></summary>
-                <p>we are flexible anywhere</p>
-            </details>
+            <p>do you capture house parties ? <span><button id="twos" class="faqq">+</button></span></p>
+            <div id="twosanswer">
+                
+            </div>
+        </li>
+        
+        <li>
+            <p>do you train photography ?<span><button id="threes" class="faqq">+</button></span></p>
+            <div id="threesanswer">
+                
+            </div>
         </li>
         <li>
-            <details>
-                <summary>can we hire you  <span>+</span></summary>
-                <p>we are open for hire feel free</p>
-            </details>
-            <details>
-                <summary>do you capture birthday parties <span>+</span></summary>
-                <p>yes,in fidel_photography we make memories through images</p>
-            </details>
-        </li>
-        <li>
-            <details>
-                <summary>do you train photograpers <span>+</span></summary>
-                <p>contact support fo assistance</p>
-            </details>
+            <p>can you be hired ? <span><button id="fours" class="faqq">+</button></span></p>
+            <div id="foursanswer">
+                
+            </div>
         </li>
         <li>
             <details>
@@ -96,7 +112,7 @@
 
                     </textarea>
                     <br><br>
-                    <button id="btn2" type="submit">submit</button>
+                    <button id="btn2" type="submit" >submit</button>
                     <br><br>
                 </fieldset>
                </form>
@@ -117,27 +133,13 @@
       
        <button class="bts" id="one">1</button><button class="bts" id="two">2</button> <button class="bts" id="three">3</button><button class="bts" id="four">4</button><button class="bts" id="five">5</button>
        <br>
+       <p id="message"></p>
        <br>
-       <button id="add">add your testimonial</button>
+       <button id="add">add testimony</button>&nbsp;<button id="oks" onclick="submit()">submit</button>
        <br>
        <br>
-       <div id="feature">
-        <br>
-        <label for="image">upload profile pic (optional)</label>
-        <br>
-       <input type="file" name="upload image" id="upload" accept="/img" >
-       <br>
-       <label for="username">your name</label>
-       <br>
-       <input type="text" name="name" id="username" required>
-       <br>
-       <label for="feedback">leave a testimonial</label>
-       <br>
-       <p id="gettext"><input type="text" name="" id=""></p>
-       <br>
-       <button id="ok" class="sub">submit</button>
-       <br>
-
+       <div id="features">
+      
        </div>       
     </div>
 
@@ -146,13 +148,18 @@
             <br><br>
          
             <ul  class="contacts">
-                CONTACT INFO
-                <li><a href="#facebook.com"><img src="img/facebook.png" alt="facebook" class="icon"></a></li>
+               FOLLOW US ON
+                <li><a href="#facebook.com"><img src="img/facebook.png" alt="facebook" class="icon" ></a></li>
                 <li><a href="instagram.com"><img src="data:image/png;base64,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" alt="instagram" class="icon"></a></li>
                 <li><a href="x.com"><img src="img/x.png" alt="tweeter" class="icon"></a></li>
-                <li><a href="wa.me/+254721435343"><img src="img/whatsaap.png" alt="whatsaap" class="icon"></a></li>
-                <li><a href="mailto:fiddelisnyabuti@gmail.com"><img src="img/email.png" alt="email us" class="icon"></a></li>
                 <li><a href="tiktok"><img src="data:image/png;base64,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" alt="tiktok" class="icon"></a></li>
+            </ul>
+            <ul>
+                CONTACT US
+                <li><a href="mailto:fiddelisnyabuti@gmail.com"><img src="img/email.png" alt="email us" class="icon" ></a></li>
+                <li><a href="wa.me/+254721435343"><img src="img/whatsaap.png" alt="whatsaap" class="icon" ></a></li>
+                <li><a href="tel:+254721436343"><img src="img/whatsaap.png" alt="+254721436343" class="icon" ></a></li>
+
             </ul>
             <ul id="quicklinks">
                     QUICKLINKS
@@ -162,13 +169,16 @@
                 <li><a href="photo.html">Services</a></li>
                 <li><a href="about.html">about-us</a></li>
             </ul>
+            <ul>
+                <li></li>
+            </ul>
            
            
      
        <br>
        <br>
        <div id="copyright">
-        <p>&copy;2025</p>
+        <p>copyright &copy;2025 fidel_photography</p>
         <p>all rights reserved </p>
         <p>made by vincent: <a href="https://wa.me/+25474053081 ">+25474053081 </a></p>
       <br>
@@ -194,11 +204,22 @@ function testmony(){
     let image=document.getElementById('images');
     let txt=document.getElementById('text');
     let username=document.getElementById('usernames');
+    let para=document.getElementById('features');
+    let ans=document.getElementById('onesanswer');
+    let ans1=document.getElementById('twosanswer');
+    let ans2=document.getElementById('threesanswer');
+    let ans3=document.getElementById('foursanswer');
     let btn1=document.getElementById('one');
     let btn2=document.getElementById('two');
     let btn3=document.getElementById('three');
     let btn4=document.getElementById('four');
     let btn5=document.getElementById('five');
+    let btn6=document.getElementById('add');
+    let btn7=document.getElementById('oks');
+    let btn8=document.getElementById('ones');
+    let btn9=document.getElementById('twos');
+    let btn10=document.getElementById('threes');
+    let btn11=document.getElementById('fours');
 
 
     btn1.addEventListener('click',()=>{
@@ -207,37 +228,116 @@ function testmony(){
         username.textContent=' @ juice_prozzone';
     })
     btn2.addEventListener('click',()=>{
-        image.innerHTML='<img src="img/2.jpg" alt="" srcset="">';
+        image.innerHTML='<img src="img/2.jpg" alt="loading" >';
         txt.textContent='it was just fun working with #fidel_photography' 
         username.textContent=' @ Velmah';
     })
     btn3.addEventListener('click',()=>{
-        image.innerHTML='<img src="img/3.jpg" alt="" srcset="">';
+        image.innerHTML='<img src="img/3.jpg" alt="loading"  >';
         txt.textContent='party coverage,iko sawa na #fidel_photography' 
         username.textContent=' @ dudu_mbaya';
     })
     btn4.addEventListener('click',()=>{
-        image.innerHTML='<img src="img/4.jpg" alt="" srcset="">';
+        image.innerHTML='<img src="img/4.jpg" alt="loading"  >';
         txt.textContent='splendid rally event shots by #fidel_photography'
         username.textContent='@ elnah'; 
     })
     btn5.addEventListener('click',()=>{
-        image.innerHTML='<img src="img/5.jpg" alt="img not found" srcset="">';
+        image.innerHTML='<img src="img/1.jpg" alt="loading" >';
         txt.textContent='best edits photo sessions' ;
         username.textContent=' @ wickliff_adero';
     })
-
+    btn6.addEventListener('click',()=>{
+        para.style.backgroundColor='light-blue';
+        para.innerHTML=`
+         <label for="image">upload profile pic (optional)</label>
+        <br>
+       <input type="file" name="upload image" id="upload" accept=".jpg,.png,.jpeg,.svg" >
+       <br>
+       <label for="username" >your name</label>
+       <br>
+       <input type="text" name="name" id="username"placeholder="enter name" required>
+       <br>
+       <label for="feedback">leave a testimonial</label>
+       <br>
+       <textarea id="gettext" placeholder="enter your feedback" style="width:99vw;height:15vh;" ></textarea>
+       <br>
+        `;
+     
+    })
+    btn7.addEventListener('click',()=>{
+        para.innerHTML=``;
+      setTimeout(() => {
+        let message=document.getElementById('message');
+        message.style.color='rgb(60, 77, 235)';
+        message.style.fontSize='20px';
+        message.style.backgroundColor='WHITE';
+        message.innerText="thanks,testmonial recorded successful!!";
+      }, 2000);
+    })
+    btn8.addEventListener('click',()=>{
+            ans.innerText='we are located in kisii town';
+            ans.style.color="rgb(60, 77, 235)";
+            ans.style.fontSize="23px";
+    })
+    btn9.addEventListener('click',()=>{
+            ans1.innerText='yes,we capture everything memories ,check our services section for more';
+            ans1.style.color="rgb(60, 77, 235)";
+            ans1.style.fontSize="23px";
+    })
+    btn10.addEventListener('click',()=>{
+            ans2.innerText='join our team of expertise in photography and related fields';
+            ans2.style.color="rgb(60, 77, 235)";
+            ans2.style.fontSize="23px";
+    })
+    btn11.addEventListener('click',()=>{
+            ans3.innerText='we are open for hiring country wide ,contact us for more';
+            ans3.style.color="rgb(60, 77, 235)";
+            ans3.style.fontSize="23px";
+    })
+   
 }
 testmony();
-function add(){
-    let btn=document.getElementById('add');
-    let show=document.getElementById('feature');
-    btn.addEventListener('click',()=>{
-      show.classList.toggle="active";
-    })
-}
+function clear(){
+        let divs=document.getElementById('make-order');
+        divs.innerHTML=``;
+    }
 
-  
+function makeOrder(){
+    let button=document.getElementById('order');
+    let div=document.getElementById('make-order');
+    button.addEventListener('click',()=>{
+        div.innerHTML=`
+          <form action="mailto:fidelphotograpy@gmail.com" method="get" id="orders">
+                <fieldset>
+                    <br>
+                    <label for="phone">phone number:</label>
+                    <br>
+                    <input type="tel" name="phone" id="phone" placeholder="enter phone number">
+                    <br><br>
+                    <label for="selection">select a service</label>
+                    <br><br>
+
+                    <select name="selection" id="selection">
+                        <option value="">wedding coverage</option>
+                        <option value="">street photography</option>
+                        <option value="">house  party</option>
+                        <option value="">rally </option>
+                        <option value="">funeral coverage</option>
+                        <option value="">other</option>
+                    </select>
+
+                    <br>
+                    <br>
+                    <button type="submit" id="sub" onclick="clear()">submit</button>
+                    <br><br>
+                </fieldset>
+            </form>
+        `
+    })
+   
+    
+}
       </script>
     </body>
     </div>

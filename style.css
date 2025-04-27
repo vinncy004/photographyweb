@@ -204,22 +204,22 @@ a:active{
         border: none;
         background: none;
         background-color: transparent;
-        margin-left: 10%;
+        margin-left: 1px;
        }
        #menu-icon{
         background: none;
         background-color: transparent;
         width: 40px;
         height: 30px;
-        margin-left: 0;
+        margin-left: 20%;
        }
        #icontop{
         display: none;
        }
      .top-navigation{
-      height: 100vh;
-      width: 50vw;
-      background-color: rgb(43, 37, 37);
+      height: 50px;
+      width: 100vw;
+      background-color:rgb(60, 77, 235);
       display: none;
       z-index: 1000;
       position: absolute;
@@ -262,7 +262,36 @@ a:active{
     border: none;
     border-radius: 5px;
    }
-  
+   #header1{
+    font-size: 25px;
+   }
+   #header3{
+    font-size: 20px;
+    color: rgb(60, 77, 235);
+    text-align: left;
+    font-family: sans-serif;
+    text-decoration: underline;
+   }
+   p{
+    align-items: left;
+    margin-left: 2px;
+   }
+  #serv li{
+    list-style-type:none;
+    display: block;
+    margin-left: 5%;
+    color: #3693fd;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+  }
+  #services-header{
+    text-align: center;
+    text-decoration: overline;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+  }
    #bottom-nav{
     width: 99vw;
     color: rgb(7, 7, 7);
@@ -299,6 +328,7 @@ a:active{
     border-radius: 50%;
     
    }
+   
    .bts{
     width: 40px;
     height: 30px;
@@ -310,6 +340,7 @@ a:active{
    #one{
     margin-left: 25%;
    }
+
    .sub{
     margin-left: 27%;
     width: 40vw;
@@ -321,36 +352,111 @@ a:active{
 
    }
    #add{
-    margin-left: 20%;
-    width: 50vw;
+    margin-left: 2%;
+    width: 40vw;
     height: 40px;
     border-radius: 5px;
-    background-color: #68254e;
+    color: black;
+    background-color: #d1d1d1;
     font-size: 20px;
     margin-top: 10px;
+    border-radius: 20px;
+    &:hover{
+      background-color: rgb(6, 179, 58);
+    }
    }
-   #feature{
+   .order{
+    width: 80vw;
+    height: 40px;
+    background-color: #ac3c20;
+    color: white;
+    font-size: 23px;
+    margin-left: 30px;
+    &:hover{
+      background-color: #3693fd;
+      color: whitesmoke;
+    }
+   }
+   #make-order fieldset{
+    width: 97vw;
+   }
+   #orders input {
+    width:90% ;
+    height:40px ;
+    margin-left: 10px;
+    font-size: 21px;
+    color:black ;
+    &::placeholder{
+      font-size: 20px;
+    }
+
+   }
+   #selection {
+    width:90% ;
+    height:40px ;
+    margin-left: 10px;
+    font-size: 20px;
+    color:black ;
+   }
+   #sub{
+    width: 50%;
+    height: 30px;
+    margin-left: 25%;
+    border-radius: 15px;
+    background: none;
+    background-color:transparent ;
+   }
+   #oks{
+    margin-left: 5%;
+    width: 40vw;
+    height: 40px;
+    border-radius: 5px;
+    color: black;
+    background-color: #d1d1d1;
+    font-size: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    &:hover{
+      background-color: rgb(6, 179, 58);
+    }
+   }
+   #features{
     width: 99vw;
     height: fit-content;
-    background-color: #fffbfb;
-    display:none;
+    background-color:#3693fd;
+    display:block;
    }
-   #feature.active{
-    display: block;
-   }
-   #feature input{
+    
+   #features input{
     width: 80vw;
-    height: 30px;
-    margin-left: 4px;
+    height: 40px;
+    margin-left: 10px;
     border: 1px solid black;
+   }
+   #features input::placeholder{
+    font-size: 20px;
+    color: #1b1c1d;
+   }
+   #features label{
+    font-size: 22px;
+    font-family: sans-serif;
    }
    #ok{
     margin-left: 20%;
     width: 30vw;
     background-color: transparent;
-   border-radius: 15px;
+   border-radius: 20px;
    }
-
+ .faqq{
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-left: 2px;
+  background: none;
+  font-size: 30px;
+ text-align: center;
+  background-color: transparent;
+ }
    .contacts li{
     display: block;
     margin-top: 10px;
