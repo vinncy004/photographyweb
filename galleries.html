@@ -62,6 +62,15 @@
         .top-navigation a:hover {
             color: #ddd;
         }
+        .booking-btn{
+            color: white;
+            background-color: rgb(180, 58, 13);
+            font-size: 20px;
+            border: none;
+            text-align: center;
+            border-radius: 5px;
+            width: 30vw;
+        }
 
         /* Ensure body has no margin to prevent gaps */
         body {
@@ -179,16 +188,16 @@
     </style>
 </head>
 <body>
-    <div class="menu-bar">
+    <div class="menu-bar" style="background-color: rgb(60, 77, 235); ">
         <button id="menu" onclick="toggleNav()">☰   <span id="name">Fidel_shots photography</span></button>
     </div>
-    <nav class="top-navigation" id="sideNav">
+    <nav class="top-navigation" id="sideNav" style="background-color: rgb(60, 77, 235); color: white;">
         <ul>
             <li><a href="index.html" onclick="closeNav()">Home</a></li>
             <li><a href="galleries.html" onclick="closeNav()">Galleries</a></li>
             <li><a href="services.html" onclick="closeNav()">Services</a></li>
             <li><a href="about.html" onclick="closeNav()">About-us</a></li>
-            <li><a href="https://wa.me/+254703835240" onclick="closeNav()">Book now</a></li>
+            <li><button class="booking-btn"><a href="book.html" onclick="closeNav()">Book now</a> </button></li>
         </ul>
     </nav>
     <br><input type="text" id="searchInput" placeholder="Search photos (e.g.,club, street,corporate, wedding,graduation,passport)">
@@ -271,7 +280,7 @@
             <p>Bride & Groom Kiss</p>
         </div>
         <div class="gallery-item" data-category="wedding">
-            <img src="ihttps://pbs.twimg.com/media/FUjjtO0XoAAbLGp?format=jpg&name=small" alt="Wedding Party">
+            <img src="https://pbs.twimg.com/media/FUjjtO0XoAAbLGp?format=jpg&name=small" alt="Wedding Party">
             <p>Wedding Party</p>
         </div>
         <div class="gallery-item hidden" data-category="wedding">

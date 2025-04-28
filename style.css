@@ -287,10 +287,12 @@ a:active{
 
   }
   #services-header{
-    text-align: center;
-    text-decoration: overline;
+    margin-top: 20px;
+    text-align: left;
     text-decoration: underline;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: #f03f13;
   }
    #bottom-nav{
     width: 99vw;
@@ -451,11 +453,13 @@ a:active{
   width: 30px;
   height: 30px;
   border: none;
-  margin-left: 2px;
+  margin-left: 3px;
   background: none;
-  font-size: 30px;
- text-align: center;
+  font-size: 22px;
   background-color: transparent;
+ }
+ .faqq div{
+  font-size: 20px;
  }
    .contacts li{
     display: block;

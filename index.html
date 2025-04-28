@@ -8,11 +8,11 @@
 </head>
 <body>
   
-<div id="menu-bar">
+<div id="menu-bar" style="background-color: rgb(60, 77, 235);">
     <span id="title" >fidel_photography</span><button id="menu"><img src="img/menubar.png" alt="" id="menu-icon" onclick="toggleNav()" ></button>
 </div>
     <div class="container">
-        <div class="top-navigation" id="sideNav">
+        <div class="top-navigation" id="sideNav" style="background-color: rgb(60, 77, 235);" >
             
             <ul><li id="icontop"><img src="img/icon.jpg" alt="loading..." class="icon" loading="lazy"><span class="icon-name">fidel_shots</span></li>
                 <li><a href="index.html" onclick="closeNav()">home</a></li>
@@ -60,7 +60,7 @@
          <div id="make-order">
           
          </div>
-         <h2>why choose fidel_photography?</h2>
+         <h2 id="services-header">why fidel_photography?</h2>
          <br>
         <h3 id="header3">customer satisfaction</h3>
         <p>we value our customers,we try to  achieve the expectations of our customers </p>
@@ -72,7 +72,7 @@
         <p>fidel_photography offers 24/7 support to our  valued customers <br>we are open </p>
      <br><br>
      <ul>
-        <h3>FAQs-we have got answers</h3>
+        <h3 id="services-header">frequent asked questions:</h3>
         <li>
             <p>where are your offices located ? <span><button id="ones" class="faqq">+</button></span></p>
             <div id="onesanswer">
@@ -98,30 +98,9 @@
                 
             </div>
         </li>
-        <li>
-            <details>
-                <summary>leave us your feedback <span>+</span></summary>
-               <form action="#" method="get">
-                <fieldset>
-                    <legend>feedback</legend>
-                <label for="email">your email/contact</label>
-                <br>
-                <br>
-                <input type="email" name="email" id="email" required placeholder="email/phone no">
-                <br><br>
-                    <textarea name="feedback" id="feedback">
-
-                    </textarea>
-                    <br><br>
-                    <button id="btn2" type="submit" >submit</button>
-                    <br><br>
-                </fieldset>
-               </form>
-            </details>
-        </li>
     </ul>
      <br>
-     <h3>Testmonials</h3>
+     <h3 id="services-header">Testmonials</h3>
      <br>
      <div id="testmonials">
         <ul>
@@ -145,7 +124,7 @@
     </div>
 
       <div id="bottom-nav">
-        
+        <h2 id="services-header">contacts</h2>
             <br><br>
          
             <ul  class="contacts">
@@ -157,15 +136,15 @@
             </ul>
             <ul>
                 CONTACT US
-                <li><a href="mailto:fiddelisnyabuti@gmail.com"><img src="img/email.png" alt="email us" class="icon" ></a></li>
-                <li><a href="wa.me/+254721435343"><img src="img/whatsaap.png" alt="whatsaap" class="icon" ></a></li>
-                <li><a href="tel:+254721436343"><img src="data:image/png;base64,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" alt="+254721436343" class="icon" ></a></li>
+                <li><a href="mailto:fidelphotography@gmail.com"><img src="img/email.png" alt="email us" class="icon" ></a></li>
+                <li><a href="wa.me/+254714276751"><img src="img/whatsaap.png" alt="whatsaap" class="icon" ></a></li>
+                <li><a href="tel:+254714276751"><img src="data:image/png;base64,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" alt="+254721436343" class="icon" ></a></li>
 
             </ul>
             <ul id="quicklinks">
                     QUICKLINKS
                 <li><a href="#top">Top</a></li>
-                <li><a href="https://wa.me/+254721436343">Book now</a></li>
+                <li><a href="https://wa.me/+254714276751">Book now</a></li>
                 <li><a href="galleries.html">Galleries</a></li>
                 <li><a href="photo.html">Services</a></li>
                 <li><a href="about.html">about-us</a></li>
@@ -261,7 +240,7 @@ function testmony(){
        <br>
        <label for="feedback">leave a testimonial</label>
        <br>
-       <textarea id="gettext" placeholder="enter your feedback" style="width:99vw;height:15vh;" ></textarea>
+       <textarea id="gettext" placeholder="enter your feedback" style="width:99vw;height:15vh; background-color:white;" ></textarea>
        <br>
         `;
      
@@ -270,31 +249,31 @@ function testmony(){
         para.innerHTML=``;
       setTimeout(() => {
         let message=document.getElementById('message');
-        message.style.color='rgb(60, 77, 235)';
+        message.style.color='green';
         message.style.fontSize='20px';
         message.style.backgroundColor='WHITE';
         message.innerText="thanks,testmonial recorded successful!!";
-      }, 2000);
+      }, 1000);
     })
     btn8.addEventListener('click',()=>{
             ans.innerText='we are located in kisii town';
             ans.style.color="rgb(60, 77, 235)";
-            ans.style.fontSize="23px";
+            ans.style.fontSize="19px";
     })
     btn9.addEventListener('click',()=>{
             ans1.innerText='yes,we capture everything memories ,check our services section for more';
             ans1.style.color="rgb(60, 77, 235)";
-            ans1.style.fontSize="23px";
+            ans1.style.fontSize="19px";
     })
     btn10.addEventListener('click',()=>{
             ans2.innerText='join our team of expertise in photography and related fields';
             ans2.style.color="rgb(60, 77, 235)";
-            ans2.style.fontSize="23px";
+            ans2.style.fontSize="19px";
     })
     btn11.addEventListener('click',()=>{
             ans3.innerText='we are open for hiring country wide ,contact us for more';
             ans3.style.color="rgb(60, 77, 235)";
-            ans3.style.fontSize="23px";
+            ans3.style.fontSize="19px";
     })
    
 }
